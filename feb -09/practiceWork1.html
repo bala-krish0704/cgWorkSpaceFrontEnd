@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check odd number or not</h1>
+    <input type="text" name="" id="num1">
+    <Button onclick="oddOrEven()">Check Odd or even</Button>
+
+    <h1>Check it is palindrome or not</h1>
+    <input type="text" name="" id="num2">
+    <button onclick="palindrome()" >check palandrome</button>
+</body>
+<script>
+    function oddOrEven(){
+        const a = document.getElementById('num1').value;
+        if(a%2 == 0){
+            alert("This even number");
+           
+        }else{
+            alert("This is odd number");
+            
+        }
+    }
+    
+    function palindrome(){
+        const val = document.getElementById('num2').value;
+        const len = val.length;
+        for(let i = 0 ; i < len/2; i++){
+            if(val[i]!=val[len-1-i]){
+                alert("Not palindrome");
+            }else{
+                alert("it is palindrome");
+            }
+        }
+
+        }
+
+</script>
+
+</html>
